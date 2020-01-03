@@ -4,6 +4,7 @@ import NavigationBar from "../shared/NavigationBar";
 import NewForests from "./NewForests";
 import Deforestation from "./Deforestation";
 import Regions from "./Regions";
+import Footer from "../shared/Footer";
 
 class Landing extends Component {
     constructor(props){
@@ -30,6 +31,7 @@ class Landing extends Component {
                 <NewForests newForests={this.newForests}/>
                 <Deforestation deforestation={this.deforestation}/>
                 <Regions regions={this.regions}/>
+                <Footer/>
             </div>
         );
     }

@@ -52,18 +52,46 @@
     background-size: cover;
 }
 
-.clickable{
-  cursor: pointer;
+.clickable {
+    cursor: pointer;
 }
 
-.region-card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background-color: #006500;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  cursor: pointer;
+.region-container{
+    background-color: #e4ede7;
+}
+.region-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    box-shadow: 20px 20px 80px rgba(38, 122, 42, 0.1), -20px -20px 80px white;
+    background-color: #e4ede7 ;
+    color: darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.region-card:hover{
+    background-color: #dff2e6;
+}
+
+.region-card-chosen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    box-shadow: 20px 20px 80px rgba(38, 122, 42, 0.1), -20px -20px 80px white;
+    background-color: #c0edd1;
+    color: darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer{
+    padding-top: 50px;
+    color: white;
+    background-color: rgba(0,30,0, 0.4);
+    height: 250px;
 }
