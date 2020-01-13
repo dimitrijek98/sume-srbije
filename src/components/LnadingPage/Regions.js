@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import {regions} from '../shared/Regions';
 import {Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis} from "recharts";
+import SumeService from '../../services/SumeService';
 
 const data = [
     {
@@ -78,6 +80,7 @@ const data = [
 class Regions extends Component {
     constructor(props) {
         super(props);
+        this.SumeService = new SumeService();
         this.state = {
             selectedRegion: 'Vojvodina',
             regionData: [],
@@ -87,8 +90,14 @@ class Regions extends Component {
         this.setState({regionData: data});
     }
 
+    getRegionData = (regId) => {
+
+    }
+
     onRegionSelected = (region) => {
+        let regionId = regions.filter(reg => reg.name===region);//ovo ti vraca niz, pa ti je region id u regionId[0]
         this.setState({selectedRegion: region});
+        this.getRegionData(regionId[0]);
     }
 
     render() {
