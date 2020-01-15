@@ -11,6 +11,8 @@ Treci statisticki prikaz implementiran je u Regions.js fajlu.
 
 Sve ove implementacije za komunikaciju sa backendom koriste SumeService.js fajl. Koriscenjem axios.get i axios.post metoda, vrsi se komunikacija sa backednom.
 
+
+Statisitka se prikazuje za proslu godinu. Za potrebe testiranja novih unosa moguce je u api delu promeniti da se prikazuju podaci za ovu godinu. Vise o tome u README.md na sume-srbije-api.
 Klijentska aplikacija se pokrece na http://localhost:3000.
 
 
