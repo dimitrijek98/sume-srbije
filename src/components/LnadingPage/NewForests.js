@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis} from "recharts";
+import {Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis} from "recharts";
 import SumeService from '../../services/SumeService';
 
 

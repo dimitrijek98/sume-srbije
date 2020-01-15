@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import NavigationBar from "../shared/NavigationBar";
 
 class HeroSection extends Component {
     render() {
