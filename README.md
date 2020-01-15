@@ -1,3 +1,20 @@
+# sume-srbije
+Projekat na ovom repozitorijumu predstavlja klijentski deo nase aplikacije. Ovaj deo aplikacije sluzi za ppregled podataka iz baze i njohovo oblikovanje u zeljene graficke statisticke prikaze. Postoje prikazi o posumljavanju cele republike u toku godine, seci u konkretnim oblastima u toku konkretnog meseca, kao i detaljni podaci za svaki region ponaosob.
+Pri pokretanju aplikacije odmah se dobijaju podaci o protekloj godini.
+Prvi statisticki prikaz je posumljavanje na celoj teritoriji rebulike u toku prosle godine, ovo je implementirano u NewForests.js fajlu.
+Drugi statisticki prikaz je seca u svim regionima republike u toku konkretnog meseca prosle godine, ovo je implementirano u Deforestation.js fajlu.
+Treci statisticki prikaz predstavlja podatke za konkretni region i sadrzi 3 graficka prikaza:
+    -broj zasadjenih i posecenih stabala u konkretnoj regiji u toku prosle godine
+    -broj zasadjenih i posecenih stabala za svako drvo iz te regije u toku prosle goidne
+    -odnos povrsine na kojoj se sadilo i povrsine na kojoj se seklo u toku prosle godine.
+Treci statisticki prikaz implementiran je u Regions.js fajlu.
+
+Sve ove implementacije za komunikaciju sa backendom koriste SumeService.js fajl. Koriscenjem axios.get i axios.post metoda, vrsi se komunikacija sa backednom.
+
+Klijentska aplikacija se pokrece na http://localhost:3000.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
